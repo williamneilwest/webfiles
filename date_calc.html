@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        /* Base styling */
+        body {
+            background-color: #fce4ec; /* soft pink */
+            font-family: 'Poppins', sans-serif;
+            margin: 20px;
+            color: #4a4a4a;
+        }
+        h1 {
+            text-align: center;
+            color: #c2185b;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        p.description {
+            text-align: center;
+            font-size: 1.2em;
+            color: #6a1b9a;
+            margin-bottom: 20px;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            max-height: 600px;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 1.1em;
+            color: #6a1b9a;
+        }
+        input[type="date"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #f8bbd0;
+            border-radius: 10px;
+            font-size: 1em;
+            background-color: #f3e5f5;
+            color: #4a4a4a;
+            outline: none;
+            transition: border 0.3s;
+            box-sizing: border-box;
+        }
+        input[type="date"]:focus,
+        input[type="number"]:focus {
+            border-color: #c2185b;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #c2185b;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #a3164a;
+        }
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #6a1b9a;
+        }
+
+        /* Enhanced Mobile Styling */
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p.description {
+                font-size: 1.1em;
+            }
+            form {
+                width: 50%; /* Half the screen width on mobile */
+                margin: 0 auto; /* Center it */
+                padding: 15px;
+            }
+            label {
+                font-size: 1em;
+            }
+            input[type="date"],
+            input[type="number"] {
+                padding: 12px;
+                font-size: 1.1em;
+            }
+            button {
+                padding: 14px;
+                font-size: 1.1em;
+            }
+            #result {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Date Calculator</h1>
+<p class="description">
+    Enter your project start date and the number of days required for completion, then discover your finish date!
+</p>
+<form id="calcForm">
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" required>
+
+    <label for="days">Length of Time (in days):</label>
+    <input type="number" id="days" required>
+
+    <button type="submit">Calculate Completion Date</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    document.getElementById('calcForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get input values
+        const startDateValue = document.getElementById('startDate').value;
+        const daysValue = parseInt(document.getElementById('days').value, 10);
+
+        if (!startDateValue || isNaN(daysValue)) {
+            alert("Please enter valid values.");
+            return;
+        }
+
+        // Create Date object and add days
+        const startDate = new Date(startDateValue);
+        startDate.setDate(startDate.getDate() + daysValue);
+
+        // Display result
+        document.getElementById('result').textContent =
+            "Completion Date: " + startDate.toDateString();
+    });
+</script>
+</body>
+</html>

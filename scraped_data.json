@@ -1,0 +1,170 @@
+[
+    {
+        "type": "Experience robot AU",
+        "price": 100.0,
+        "income": 10.0,
+        "days": "2day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Compound interest robot U1",
+        "price": 500.0,
+        "income": 24.0,
+        "days": "18day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Compound interest robot U2",
+        "price": 1200.0,
+        "income": 61.2,
+        "days": "30day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Compound interest robot U3",
+        "price": 3000.0,
+        "income": 159.0,
+        "days": "45day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Compound interest robot U3+",
+        "price": 5000.0,
+        "income": 300.0,
+        "days": "45day",
+        "limited_purchase_level": "S1"
+    },
+    {
+        "type": "Compound interest robot U4",
+        "price": 7000.0,
+        "income": 392.0,
+        "days": "60day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Compound interest robot U5",
+        "price": 15000.0,
+        "income": 900.0,
+        "days": "70day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Compound interest robot U6",
+        "price": 35000.0,
+        "income": 2170.0,
+        "days": "90day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "GoldMind K1",
+        "price": 500.0,
+        "income": 13.0,
+        "days": "15day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "GoldMind K2",
+        "price": 1000.0,
+        "income": 26.5,
+        "days": "30day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "GoldMind K3",
+        "price": 3000.0,
+        "income": 82.5,
+        "days": "60day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "GoldMind K4",
+        "price": 8000.0,
+        "income": 228.0,
+        "days": "90day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "GoldMind K5",
+        "price": 20000.0,
+        "income": 590.0,
+        "days": "120day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "GoldMind K6",
+        "price": 50000.0,
+        "income": 1450.0,
+        "days": "135day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Medibot 1",
+        "price": 800.0,
+        "income": 21.2,
+        "days": "18day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Medibot 2",
+        "price": 1800.0,
+        "income": 48.6,
+        "days": "30day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Medibot 3",
+        "price": 3000.0,
+        "income": 82.5,
+        "days": "45day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Medibot 4",
+        "price": 6000.0,
+        "income": 168.0,
+        "days": "60day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Medibot 5",
+        "price": 10000.0,
+        "income": 290.0,
+        "days": "75day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Medibot 6",
+        "price": 20000.0,
+        "income": 600.0,
+        "days": "90day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Medibot 7",
+        "price": 50000.0,
+        "income": 1600.0,
+        "days": "115day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Smart contract robot A7",
+        "price": 100000.0,
+        "income": 2800.0,
+        "days": "150day",
+        "limited_purchase_level": "S0"
+    },
+    {
+        "type": "Smart contract robot A8",
+        "price": 500000.0,
+        "income": 17500.0,
+        "days": "360day",
+        "limited_purchase_level": "S4"
+    },
+    {
+        "type": "Smart contract robot A9",
+        "price": 800000.0,
+        "income": 29600.0,
+        "days": "380day",
+        "limited_purchase_level": "S0"
+    }
+]

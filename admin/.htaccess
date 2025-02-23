@@ -1,0 +1,9 @@
+<Files "admin.html">
+    AuthType Basic
+    AuthName "Admin Area"
+    AuthUserFile /etc/apache2/.htpasswd
+    Require valid-user
+    Options -Indexes
+    DirectoryIndex admin.html
+</Files>
+
